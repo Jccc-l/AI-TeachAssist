@@ -1,4 +1,4 @@
-# Artificial Intelligence Educational Assistance System
+# AI Teaching Assistance System
 
 This is an artificial intelligence educational assistance system that supports gesture control and voice recognition.
 
