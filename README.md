@@ -1,10 +1,15 @@
 # AI-Assisted-Teaching-System
 
+This is an artificial intelligence educational assistance system that supports gesture control and voice recognition.
+
+## Fetures
+
 ## Dependencies
 
-- Python3.10
+- python3.10
+- python3-venv
 
-## Installation
+## Installation and Running
 
 ```sh
 # clone this repository and go into its directory
@@ -15,11 +20,14 @@ cd AI-Assisted-Teaching-System
 python -m venv venv
 source venv/bin/activate
 
+# Follow the official PyTorch tutorial and install the corresponding version of torch.
+pip3 install torch torchvision torchaudio
+
 # Install the requirements.
 
 pip install -r requirements.
 
-# Download the model
+# Download the model into the "Automatic_Speech_Recognition_Module" directory
 git lfs install
 git clone https://huggingface.co/Systran/faster-whisper-small\
 ./Automatic_Speech_Recognition_Module/small
