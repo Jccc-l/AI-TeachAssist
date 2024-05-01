@@ -1,6 +1,6 @@
 import tkinter as tk
 from tkinter import messagebox
-from Automatic_Speech_Recognition_Module import *
+from Automatic_Speech_Recognition.transper import *
 import pyaudiowpatch as pyaudio
 from faster_whisper import WhisperModel as whisper
 import zhconv
@@ -9,7 +9,7 @@ import time
 import cv2
 import numpy as np
 import pyautogui
-from HandTracking.HandTrackingModule import HandDetector
+from Gesture_Recognition.HandTrackingModule import HandDetector
 
 class UI:
     def __init__(self):
@@ -98,8 +98,8 @@ class UI:
         print("Loading model...")
         device = "cuda" if torch.cuda.is_available() else "cpu"
         print(f"Using {device} device.")
-        #model = whisper(r"faster_whispher_asr/small", device=device, compute_type="float16")
-        model = whisper(r"faster_whispher_asr/small", device='cpu', local_files_only=True)
+        #model = whisper(r"faster-whisper-small", device=device, compute_type="float16")
+        model = whisper(r"faster-whisper-small", device='cpu', local_files_only=True)
 
         print("Model loaded.")
 
