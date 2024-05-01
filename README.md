@@ -82,3 +82,9 @@ python ui.py
 |Fist clenched|Drag|
 |Thumb extended, others bent|Up arrow key|
 |Thumb bent, others vertical|Down arrow key|
+
+## Troubles
+
+If you receive the following error, delete the file `venv/Library/bin/libiomp5md.dll` in the virtual environment.
+
+>  OMP:Error #15:Initializing libiomp5md.dll,but found libiomp5md.dll already initialized. OMP:Hint This means that multiple copies of the OpenMP runtime have been linked into the program.That is dangerous,si nce it can degrade performance or cause incorrect results.The best thing to do is to ensure that only a single OpenMp r untime is linked into the process,e.g.by avoiding static linking of the OpenMp runtime in any library.As an unsafe,u nsupported,undocumented workaround you can set the environment variable KMP_DUPLICATE_LIB_OK=TRUE to allow the program to continue to execute,but that may cause crashes or silently produce incorrect results.For more information,please s ee http://www.intel.com/software/products/support/.
