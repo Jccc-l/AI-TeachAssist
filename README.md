@@ -1,8 +1,8 @@
 # AI Teaching Assistance System
 
 This is an artificial intelligence educational assistance system that supports gesture control and voice recognition.
-<img src="https://raw.githubusercontent.com/Jccc-l/AI-TeachAssist/main/UI.png?token=GHSAT0AAAAAACRXB5RMXYU656CQ4JNBL6E6ZRSPEMA" width="40%">
-<img src="https://raw.githubusercontent.com/Jccc-l/AI-TeachAssist/main/Subtitles.png?token=GHSAT0AAAAAACRXB5RNDBXQSMROCJPS32C4ZRSPDKA" width="50%">
+<!--<img src="https://raw.githubusercontent.com/Jccc-l/AI-TeachAssist/main/UI.png?token=GHSAT0AAAAAACRXB5RMXYU656CQ4JNBL6E6ZRSPEMA" width="40%">
+<img src="https://raw.githubusercontent.com/Jccc-l/AI-TeachAssist/main/Subtitles.png?token=GHSAT0AAAAAACRXB5RNDBXQSMROCJPS32C4ZRSPDKA" width="50%">-->
 <img src="https://raw.githubusercontent.com/Jccc-l/AI-TeachAssist/main/Screenshot.png?token=GHSAT0AAAAAACRXB5RMLYPACTHGXLXWQ24SZRSPDZQ" width="100%">
 
 ## Fetures
@@ -74,17 +74,20 @@ python ui.py
 
 #### Gesture Control
 
-|Gestures|Actions|
-|--|--|
-|Index and middle fingers raised|Cursor movement|
-|Index and middle fingers together|Left-Click|
-|Index finger upright, middle finger bent|Right-Click|
-|Fist clenched|Drag|
-|Thumb extended, others bent|Up arrow key|
-|Thumb bent, others vertical|Down arrow key|
+| Gestures                                 | Actions         |
+|------------------------------------------|-----------------|
+| Index and middle fingers raised          | Cursor movement |
+| Index and middle fingers together        | Left-Click      |
+| Index finger upright, middle finger bent | Right-Click     |
+| Fist clenched                            | Drag            |
+| Thumb extended, others bent              | Up arrow key    |
+| Thumb bent, others vertical              | Down arrow key  |
 
-## Troubles
+## FAQ
 
-If you receive the following error, delete the file `venv/Library/bin/libiomp5md.dll` in the virtual environment.
+**Receive the following error when using Voice Recognition!** 
 
->  OMP:Error #15:Initializing libiomp5md.dll,but found libiomp5md.dll already initialized. OMP:Hint This means that multiple copies of the OpenMP runtime have been linked into the program.That is dangerous,si nce it can degrade performance or cause incorrect results.The best thing to do is to ensure that only a single OpenMp r untime is linked into the process,e.g.by avoiding static linking of the OpenMp runtime in any library.As an unsafe,u nsupported,undocumented workaround you can set the environment variable KMP_DUPLICATE_LIB_OK=TRUE to allow the program to continue to execute,but that may cause crashes or silently produce incorrect results.For more information,please s ee http://www.intel.com/software/products/support/.
+> OMP: Error #15: Initializing libiomp5md.dll, but found libiomp5md.dll already initialized.
+OMP: Hint This means that multiple copies of the OpenMP runtime have been linked into the program. That is dangerous, since it can degrade performance or cause incorrect results. The best thing to do is to ensure that only a single OpenMP runtime is linked into the process, e.g. by avoiding static linking of the OpenMP runtime in any library. As an unsafe, unsupported, undocumented workaround you can set the environment variable KMP_DUPLICATE_LIB_OK=TRUE to allow the program to continue to execute, but that may cause crashes or silently produce incorrect results. For more information, please see http://www.intel.com/software/products/support/.
+
+delete the file `venv/Library/bin/libiomp5md.dll` in the virtual environment.
